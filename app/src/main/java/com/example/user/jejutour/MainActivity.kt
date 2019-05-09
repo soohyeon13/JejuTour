@@ -3,6 +3,7 @@ package com.example.user.jejutour
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +14,7 @@ class MainActivity : AppCompatActivity() {
 
 
         jejubtn.setOnClickListener { view ->
+
             val nextIntent = Intent(this, JejuActivity::class.java)
             startActivity(nextIntent)
         }
